@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #f9f9f9;
+    
+}
+
+.changelog-container {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;   
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.changelog-timeline {
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.timeline-date {
+    color: #bbb;
+    font-size: 14px;
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.timeline-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.timeline-dot::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 6rem;
+    background-color: black;
+}
+
+.timeline-dot::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 3rem;
+    background-color: black;
+}
+
+.timeline-content {
+    flex: 2;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.visit-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.visit-button:hover {
+    background-color: #555;
+}
