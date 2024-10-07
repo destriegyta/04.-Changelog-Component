@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #f9f9f9;
+    
+}
+
+.bingkai {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;   
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.isi-perubahan {
+    margin: 0 auto;
+}
+
+.isi-changelog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.tanggal{
+    color: #bbb;
+    font-size: 14px;
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.titik {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.titik::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 5rem;
+    background-color: blue;
+}
+
+.perubahan {
+    flex: 2;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.visit-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.visit-button:hover {
+    background-color: #555;
+}
